@@ -13,7 +13,7 @@ namespace Proyecto_erick
 {
     public partial class login : Form
     {
-        //Alexs mi novia hermosa
+        
         SqlCommand cmd;
         SqlConnection con = new SqlConnection();
         private SqlDataReader dr;
