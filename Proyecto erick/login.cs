@@ -84,7 +84,7 @@ namespace Proyecto_erick
 
         private void iniciosesion_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jenni\\OneDrive\\Escritorio\\Proyecto erick\\Proyecto erick\\Database.mdf\";Integrated Security=True");
+            con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jenni\\source\\repos\\Proyecto erick\\Proyecto erick\\Database.mdf\";Integrated Security=True");
             con.Open();
         }
 
