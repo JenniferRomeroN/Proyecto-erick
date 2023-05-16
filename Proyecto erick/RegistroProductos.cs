@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Proyecto_erick
 {
-    public partial class Home : Form
+    public partial class RegistroProductos : Form
     {
-        public Home()
+        public RegistroProductos()
         {
             InitializeComponent();
-        }
-
-        private void btnregistrarproduct_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            RegistroProductos ee = new RegistroProductos();
-            ee.Show();
         }
     }
 }

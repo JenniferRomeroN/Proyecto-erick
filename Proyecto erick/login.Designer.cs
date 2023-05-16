@@ -33,7 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnacceder = new System.Windows.Forms.Button();
             this.btncuenta = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -123,21 +122,10 @@
             this.btncuenta.UseVisualStyleBackColor = false;
             this.btncuenta.Click += new System.EventHandler(this.btncuenta_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.label1.Location = new System.Drawing.Point(935, 648);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 21);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "¿Has Olvidado Tu contraseña?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(965, 725);
+            this.linkLabel1.Location = new System.Drawing.Point(935, 666);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(227, 20);
             this.linkLabel1.TabIndex = 14;
@@ -252,7 +240,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pbmostrar);
             this.Controls.Add(this.pbocultar);
             this.Controls.Add(this.btncuenta);
@@ -294,7 +281,6 @@
         private System.Windows.Forms.Button btncuenta;
         private System.Windows.Forms.PictureBox pbmostrar;
         private System.Windows.Forms.PictureBox pbocultar;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
