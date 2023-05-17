@@ -62,11 +62,12 @@
             this.txtusuario.Size = new System.Drawing.Size(228, 38);
             this.txtusuario.TabIndex = 1;
             this.txtusuario.Text = "Usuario";
+            this.txtusuario.Click += new System.EventHandler(this.txtusuario_Click);
             this.txtusuario.TextChanged += new System.EventHandler(this.usuario_TextChanged);
             // 
             // txtclave
             // 
-            this.txtclave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(207)))), ((int)(((byte)(215)))));
+            this.txtclave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
             this.txtclave.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtclave.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtclave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,7 +79,9 @@
             this.txtclave.Size = new System.Drawing.Size(228, 35);
             this.txtclave.TabIndex = 2;
             this.txtclave.Text = "Contraseña";
+            this.txtclave.Click += new System.EventHandler(this.txtclave_Click);
             this.txtclave.TextChanged += new System.EventHandler(this.clave_TextChanged);
+            this.txtclave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtclave_KeyPress);
             // 
             // label3
             // 

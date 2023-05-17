@@ -68,8 +68,6 @@ namespace Proyecto_erick
         private void usuario_TextChanged(object sender, EventArgs e)
         {
             txtusuario.Enabled = true;
-
-
         }
 
         private void clave_TextChanged(object sender, EventArgs e)
@@ -84,8 +82,9 @@ namespace Proyecto_erick
 
         private void iniciosesion_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jenni\\source\\repos\\Proyecto erick\\Proyecto erick\\Database.mdf\";Integrated Security=True");
+            con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jenni\\source\\repos\\Proyecto erick\\Proyecto erick\\Login.mdf\";Integrated Security=True");
             con.Open();
+            Size = new Size(900, 508);
         }
 
         private void btncuenta_Click(object sender, EventArgs e)
@@ -137,6 +136,48 @@ namespace Proyecto_erick
             sendcode sc = new sendcode();
             this.Hide();
             sc.Show();
+        }
+
+        private void txtclave_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                if (txtclave.Text != string.Empty || txtusuario.Text != string.Empty)
+                {
+                    if (txtclave.Text != string.Empty || txtusuario.Text != string.Empty)
+                    {
+
+                        cmd = new SqlCommand("select * from LoginTable where username='" + txtusuario.Text + "' and password='" + txtclave.Text + "'", con);
+                        dr = cmd.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            dr.Close();
+                            this.Hide();
+                            Home home = new Home();
+                            home.ShowDialog();
+                        }
+                        else
+                        {
+                            dr.Close();
+                            MessageBox.Show("No hay cuenta disponible con este nombre de usuario y contraseña. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Por favor, introduzca el valor en todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void txtusuario_Click(object sender, EventArgs e)
+        {
+            txtusuario.Clear();
+        }
+
+        private void txtclave_Click(object sender, EventArgs e)
+        {
+            txtclave.Clear();
         }
     }
 }

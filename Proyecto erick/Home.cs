@@ -23,5 +23,17 @@ namespace Proyecto_erick
             RegistroProductos ee = new RegistroProductos();
             ee.Show();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            Size = new Size(1102, 567);
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 mod = new Form1();
+            mod.Show();
+        }
     }
 }
