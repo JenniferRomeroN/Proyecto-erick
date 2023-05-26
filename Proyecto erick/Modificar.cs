@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace Proyecto_erick
 {
+<<<<<<< HEAD
+    //alexs mi amor
+=======
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
     public partial class Form1 : Form
     {
         SqlConnection con = new SqlConnection();
@@ -100,10 +104,17 @@ namespace Proyecto_erick
             {
                 conexion();
 
+<<<<<<< HEAD
+                String consulta = "UPDATE Registros SET Nombre='" + txtnombre.Text + "', Descripcion='" + txtdescripcion.Text + "', Stock='" + txtstock.Text + "', Precio='" + txtprecio.Text + "' WHERE idProducto=" + id;
+                SqlCommand comando = new SqlCommand(consulta, con);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Se ha actualizado correctamente!");
+=======
                 String consulta = "UPDATE Registros SET Nombre='" + txtnombre.Text + "', Despcricion='" + txtdescripcion.Text + "', Stock='" + txtstock.Text + "', Precio='" + txtprecio.Text + "' WHERE idProducto=" + id;
                 SqlCommand comando = new SqlCommand(consulta, con);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Cliente agregado correctamente");
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
                 String consulta2 = "SELECT * FROM Registros";
                 DataTable dt = new DataTable();
                 SqlDataAdapter adaptador = new SqlDataAdapter(consulta2, con);
@@ -117,8 +128,17 @@ namespace Proyecto_erick
 
             }
         }
+<<<<<<< HEAD
+        private void bntclose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void dgactualizar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+=======
 
         private void dgactualizar_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
         {
             id = dgactualizar.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtnombre.Text = dgactualizar.Rows[e.RowIndex].Cells[1].Value.ToString();
@@ -126,10 +146,13 @@ namespace Proyecto_erick
             txtstock.Text = dgactualizar.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtprecio.Text = dgactualizar.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
+<<<<<<< HEAD
+=======
 
         private void bntclose_Click(object sender, EventArgs e)
         {
             Close();
         }
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
     }
 }

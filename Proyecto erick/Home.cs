@@ -35,5 +35,13 @@ namespace Proyecto_erick
             Form1 mod = new Form1();
             mod.Show();
         }
+<<<<<<< HEAD
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+=======
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
     }
 }

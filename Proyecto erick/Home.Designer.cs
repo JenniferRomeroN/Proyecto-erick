@@ -54,7 +54,7 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.btnregistrarproduct);
-            this.panel2.Location = new System.Drawing.Point(1075, 441);
+            this.panel2.Location = new System.Drawing.Point(1276, 465);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(344, 308);
@@ -132,7 +132,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1078, 175);
+            this.label3.Location = new System.Drawing.Point(1279, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 30);
             this.label3.TabIndex = 12;
@@ -142,7 +142,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1075, 76);
+            this.label2.Location = new System.Drawing.Point(1276, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(277, 30);
             this.label2.TabIndex = 11;
@@ -151,7 +151,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1075, 226);
+            this.comboBox2.Location = new System.Drawing.Point(1276, 250);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(344, 28);
@@ -160,7 +160,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1075, 118);
+            this.comboBox1.Location = new System.Drawing.Point(1276, 142);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(344, 28);
@@ -170,7 +170,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-181, 76);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 100);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -211,13 +211,18 @@
             this.button1.Size = new System.Drawing.Size(62, 39);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1662, 834);
+=======
             this.ClientSize = new System.Drawing.Size(1690, 834);
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

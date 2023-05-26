@@ -103,7 +103,11 @@
             this.dgactualizar.RowTemplate.Height = 24;
             this.dgactualizar.Size = new System.Drawing.Size(820, 699);
             this.dgactualizar.TabIndex = 18;
+<<<<<<< HEAD
+            this.dgactualizar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgactualizar_CellContentClick);
+=======
             this.dgactualizar.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgactualizar_CellContentDoubleClick);
+>>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
             // 
             // txtdescripcion
             // 
