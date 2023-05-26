@@ -63,7 +63,7 @@ namespace Proyecto_erick
             {
                 try
                 {
-                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jenni\\OneDrive\\Documentos\\Proyecto erick V3\\Proyecto erick\\Login.mdf\";Integrated Security=True;Connect Timeout=30";
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\jenni\\source\\repos\\Proyecto erick\\Proyecto erick\\Login.mdf\";Integrated Security=True";
                     //con.Open();
                 }
                 catch (SqlException ex)
@@ -76,8 +76,13 @@ namespace Proyecto_erick
         private void btnlogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home home = new Home(); 
-            home.Show();
+            login login = new login(); 
+            login.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -121,5 +121,45 @@ namespace Proyecto_erick
 
             }
         }
+        private ErrorProvider errorProvider1 = new ErrorProvider();
+        private bool ValidacionCampos()
+        {
+            bool ok = true;
+
+            if (txtnombrerp.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtnombrerp, "Ingrese un producto.");
+            }
+            if (txtdescripcion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtdescripcion, "Ingrese la descripcion del producto.");
+            }
+            if (txtprecio.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtprecio, "Ingrese el precio del producto.");
+            }
+            if (txtstock.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtstock, "Ingrese el stock de los productos.");
+            }
+            if (txtstock.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtstock, "Ingrese el stock de los productos.");
+            }
+            return ok;
+        }
+
+        private void BorrarMensajeError()
+        {
+            errorProvider1.SetError(txtnombrerp, "");
+            errorProvider1.SetError(txtdescripcion, "");
+            errorProvider1.SetError(txtprecio, "");
+            errorProvider1.SetError(txtstock, "");
+        }
     }
 }

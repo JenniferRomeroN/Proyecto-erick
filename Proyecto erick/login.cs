@@ -126,16 +126,14 @@ namespace Proyecto_erick
 
         private void label1_Click(object sender, EventArgs e)
         {
-            sendcode sc = new sendcode();
-            this.Hide();
-            sc.Show();
+           
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            sendcode sc = new sendcode();
             this.Hide();
-            sc.Show();
+            resetpass reset = new resetpass();
+            reset.Show();
         }
 
         private void txtclave_KeyPress(object sender, KeyPressEventArgs e)

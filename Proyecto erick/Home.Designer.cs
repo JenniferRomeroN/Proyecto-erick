@@ -218,11 +218,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(1662, 834);
-=======
+
             this.ClientSize = new System.Drawing.Size(1690, 834);
->>>>>>> a48d195689f2bba05f909f8be5d5b561a0cbb34d
+
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

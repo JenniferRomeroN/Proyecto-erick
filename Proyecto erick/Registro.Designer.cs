@@ -39,12 +39,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bntminizar = new System.Windows.Forms.Button();
             this.bntcerrar = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btncuenta);
             this.panel1.Controls.Add(this.btnregistro);
             this.panel1.Controls.Add(this.txtconfirmar);
@@ -56,38 +62,46 @@
             this.panel1.Location = new System.Drawing.Point(-1, 85);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1270, 759);
+            this.panel1.Size = new System.Drawing.Size(852, 547);
             this.panel1.TabIndex = 0;
             // 
             // btncuenta
             // 
+            this.btncuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(175)))), ((int)(((byte)(186)))));
+            this.btncuenta.FlatAppearance.BorderSize = 0;
+            this.btncuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncuenta.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.btncuenta.Location = new System.Drawing.Point(230, 359);
             this.btncuenta.Name = "btncuenta";
             this.btncuenta.Size = new System.Drawing.Size(341, 47);
             this.btncuenta.TabIndex = 7;
             this.btncuenta.Text = "¿Ya tiene cuenta? Incie sesión";
-            this.btncuenta.UseVisualStyleBackColor = true;
+            this.btncuenta.UseVisualStyleBackColor = false;
             this.btncuenta.Click += new System.EventHandler(this.btncuenta_Click);
             // 
             // btnregistro
             // 
+            this.btnregistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(175)))), ((int)(((byte)(186)))));
+            this.btnregistro.FlatAppearance.BorderSize = 0;
+            this.btnregistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnregistro.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.btnregistro.Location = new System.Drawing.Point(260, 297);
             this.btnregistro.Name = "btnregistro";
             this.btnregistro.Size = new System.Drawing.Size(290, 43);
             this.btnregistro.TabIndex = 6;
             this.btnregistro.Text = "Registrar";
-            this.btnregistro.UseVisualStyleBackColor = true;
+            this.btnregistro.UseVisualStyleBackColor = false;
             this.btnregistro.Click += new System.EventHandler(this.btnregistro_Click);
             // 
             // txtconfirmar
             // 
+            this.txtconfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.txtconfirmar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtconfirmar.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.txtconfirmar.Location = new System.Drawing.Point(367, 191);
             this.txtconfirmar.Name = "txtconfirmar";
             this.txtconfirmar.PasswordChar = '*';
-            this.txtconfirmar.Size = new System.Drawing.Size(224, 33);
+            this.txtconfirmar.Size = new System.Drawing.Size(224, 26);
             this.txtconfirmar.TabIndex = 5;
             // 
             // label3
@@ -102,19 +116,23 @@
             // 
             // txtcontrasenia
             // 
+            this.txtcontrasenia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.txtcontrasenia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcontrasenia.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.txtcontrasenia.Location = new System.Drawing.Point(367, 138);
             this.txtcontrasenia.Name = "txtcontrasenia";
             this.txtcontrasenia.PasswordChar = '*';
-            this.txtcontrasenia.Size = new System.Drawing.Size(224, 33);
+            this.txtcontrasenia.Size = new System.Drawing.Size(224, 26);
             this.txtcontrasenia.TabIndex = 3;
             // 
             // txtnombusuario
             // 
+            this.txtnombusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.txtnombusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnombusuario.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.txtnombusuario.Location = new System.Drawing.Point(367, 78);
             this.txtnombusuario.Name = "txtnombusuario";
-            this.txtnombusuario.Size = new System.Drawing.Size(224, 33);
+            this.txtnombusuario.Size = new System.Drawing.Size(224, 26);
             this.txtnombusuario.TabIndex = 2;
             // 
             // label2
@@ -139,7 +157,7 @@
             // 
             // bntminizar
             // 
-            this.bntminizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.bntminizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(175)))), ((int)(((byte)(186)))));
             this.bntminizar.FlatAppearance.BorderSize = 0;
             this.bntminizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntminizar.Image = global::Proyecto_erick.Properties.Resources.menos__1_;
@@ -153,7 +171,7 @@
             // 
             // bntcerrar
             // 
-            this.bntcerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.bntcerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(175)))), ((int)(((byte)(186)))));
             this.bntcerrar.FlatAppearance.BorderSize = 0;
             this.bntcerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntcerrar.Image = global::Proyecto_erick.Properties.Resources.close;
@@ -165,11 +183,38 @@
             this.bntcerrar.UseVisualStyleBackColor = false;
             this.bntcerrar.Click += new System.EventHandler(this.bntcerrar_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(367, 103);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(266, 1);
+            this.panel2.TabIndex = 43;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(367, 161);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(266, 1);
+            this.panel3.TabIndex = 44;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(367, 216);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(266, 1);
+            this.panel4.TabIndex = 45;
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(197)))), ((int)(((byte)(202)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(175)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(849, 627);
             this.Controls.Add(this.bntminizar);
             this.Controls.Add(this.panel1);
@@ -199,5 +244,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bntminizar;
         private System.Windows.Forms.Button bntcerrar;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
